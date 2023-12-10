@@ -1,5 +1,4 @@
 const worker = new SharedWorker("sharedWorker.js");
-worker.port.start();
 
 worker.port.postMessage({ command: "store_port", scriptNo: 1 });
 
